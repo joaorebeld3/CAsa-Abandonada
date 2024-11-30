@@ -1,0 +1,84 @@
+body {
+    background-color: #000; 
+    color: white;
+    font-family: 'Creepster', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    background-image: url('https://www.vecteezy.com/free-vector/halloween-house-abandoned-isolated'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4; 
+    z-index: -1; 
+}
+
+h1, h2, p {
+    color: #ff2e2e; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); 
+    font-size: 2.5rem;
+}
+
+h1 {
+    font-size: 3rem; 
+}
+
+button {
+    background-color: #B10E0E;
+    color: white;
+    font-family: 'Creepster', sans-serif; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #D40000; 
+    transform: scale(1.1);
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    max-width: 90%;
+}
+
+a {
+    color: #ff2e2e;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+a:hover {
+    color: #ff6666;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Exploração na Casa Abandonada</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-casa-abandonada.jpg" alt="Casa abandonada">
+            <p>Você recebeu uma carta misteriosa, convidando-o a explorar uma casa abandonada no meio da floresta. O remetente, uma pessoa desconhecida, sugere que algo valioso está escondido lá dentro. Curioso, você decide ir até lá.</p>
+            <button class="btn-proximo" data-proximo="1">Ir sozinho</button>
+            <button class="btn-proximo" data-proximo="2">Chamar um amigo</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide ir sozinho até a casa abandonada. O caminho é sombrio e você começa a sentir um arrepio na espinha, mas segue em frente. Quando chega à porta da casa, ela está ligeiramente entreaberta.</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na casa</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e desistir</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você chama um amigo para acompanhá-lo, e juntos seguem até a casa abandonada. Ao chegar, percebem que a porta está entreaberta, mas a casa parece estranhamente silenciosa.</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na casa</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e desistir</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Ao entrar na casa, você sente o cheiro de mofo e encontra um longo corredor escuro. As janelas estão cobertas por cortinas velhas, e o som do vento batendo nas portas cria uma atmosfera assustadora.</p>
+            <button class="btn-proximo" data-proximo="5">Seguir pelo corredor</button>
+            <button class="btn-proximo" data-proximo="6">Explorar a sala à direita</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.jpg" alt="imagem de desistir da exploração">
+            <p>Você decide que a casa é assustadora demais e volta para casa, mas não consegue parar de pensar no que poderia ter encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você segue pelo corredor e encontra uma porta velha, trancada. Ao tentar abrir, percebe que a chave pode estar escondida em algum lugar da casa.</p>
+            <button class="btn-proximo" data-proximo="7">Procurar pela chave na sala ao lado</button>
+            <button class="btn-proximo" data-proximo="8">Procurar pistas dentro do corredor escuro</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Na sala à direita, você encontra uma mesa cheia de papéis antigos e uma grande caixa de madeira. A caixa está trancada, mas algo brilha dentro dela.</p>
+            <button class="btn-proximo" data-proximo="9">Abrir a caixa</button>
+            <button class="btn-proximo" data-proximo="10">Procurar pela chave da porta</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você encontra uma chave escondida dentro de um livro antigo, que pode abrir a porta trancada. Agora você está mais perto do que nunca de descobrir o segredo da casa abandonada.</p>
+            <button class="btn-proximo" data-proximo="11">Abrir a porta trancada</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Enquanto explora o corredor escuro, você escuta um barulho estranho vindo do andar superior. Algo parece se mover lá em cima.</p>
+            <button class="btn-proximo" data-proximo="12">Subir as escadas e investigar</button>
+            <button class="btn-proximo" data-proximo="5">Voltar para o corredor e procurar pela chave</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Ao abrir a caixa, você encontra um amuleto antigo com símbolos estranhos. Quando você toca no amuleto, a casa começa a tremer levemente.</p>
+            <button class="btn-proximo" data-proximo="13">Explorar mais a casa</button>
+            <button class="btn-proximo" data-proximo="14">Sair correndo da casa</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você encontra a chave e abre a porta trancada. Para sua surpresa, a sala que estava escondida revela uma enorme biblioteca com livros e objetos valiosos, mas também algo mais... uma sombra que se move rapidamente.</p>
+            <button class="btn-proximo" data-proximo="13">Investigar a sombra</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Ao abrir a porta trancada, você entra em uma sala secreta cheia de documentos antigos e fotos que revelam segredos sombrios sobre a casa.</p>
+            <button class="btn-proximo" data-proximo="15">Investigar mais documentos</button>
+            <button class="btn-proximo" data-proximo="16">Sair da casa imediatamente</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você sobe as escadas e encontra um antigo quarto. Dentro, há uma cama velha e um baú trancado. Ao abrir o baú, você encontra uma carta que conta a história da casa abandonada.</p>
+            <button class="btn-proximo" data-proximo="15">Ler a carta</button>
+            <button class="btn-proximo" data-proximo="16">Fugir da casa</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>Você decide explorar mais a casa e encontra um quarto escondido, cheio de objetos misteriosos e uma escada que desce para o subterrâneo.</p>
+            <button class="btn-proximo" data-proximo="17">Descer para o subterrâneo</button>
+            <button class="btn-proximo" data-proximo="16">Sair da casa imediatamente</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>Assustado com o que acabou de acontecer, você corre para fora da casa, deixando o mistério sem solução.</p>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <p>Os documentos revelam segredos sombrios sobre os antigos donos da casa e como eles desapareceram misteriosamente. Você decide investigar mais ou sair antes que algo pior aconteça.</p>
+            <button class="btn-proximo" data-proximo="17">Investigar mais</button>
+            <button class="btn-proximo" data-proximo="16">Sair da casa</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <p>Você decide sair da casa e deixar o mistério para trás, mas a sensação de que ainda há algo lá dentro o persegue por muito tempo.</p>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <p>Você desce para o subterrâneo e encontra um altar antigo, onde algo está brilhando intensamente. Quando se aproxima, a casa começa a desabar ao seu redor.</p>
+            <button class="btn-proximo" data-proximo="18">Tentar escapar antes que a casa caia</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+           
